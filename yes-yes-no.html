@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>yes-yes-no</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="center">
+        <img src="mario-icegif-6.gif" alt="" onclick="check()">
+        <div id="result" onclick="check()"></div>
+        <br>
+        <button onclick="check()">start5</button>
+    </div>
+
+
+
+    <script>
+        var abc = true;
+        var abc2 = true;
+        function check() {
+            if (abc == true) {
+                document.getElementById("result").innerHTML = "Yes";
+                abc = false;
+            }
+            else if (abc == false && abc2 == true) {
+                document.getElementById("result").innerHTML = "Yes";
+                abc2 = false;
+            }
+            else {
+                document.getElementById("result").innerHTML = "No";
+                abc = true;
+                abc2 = true
+            }
+        }
+    </script>
+
+</body>
+
+</html>
